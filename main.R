@@ -1,3 +1,19 @@
+# Hi friend - R Lessons
+# Title	Desired Salary	Current/Last Salary	Gender	Experience Level	Work State/Province	AppExchange Products	Certifications	Customer Type	Work Eligibilty	Skills	SFDC Products	Open to Contract	Background	Industry	Function
+
+raw <- read.csv("salarydata6_20.csv")
+ifelse('Admin' %in% raw[,'Certifications'], raw$Admin=1, raw$Admin=0)
+
+    # need to do this for like everything
+    # Need to change col values to independent variables
+    
+model <- lm(Salary~Gender,data=raw)
+
+summary(model)
+
+
+#### ------ OLD Below
+
 # R Programming
 
 print("Reading Salary CSV data")
