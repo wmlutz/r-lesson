@@ -1,396 +1,136 @@
-[1] "Creating subset without clients-na"
-[1] "Creating subsets for NY, CA, and MA"
-[1] "Model for total and states"
-[1] "Start doing outputs"
-[1] "---- Printing summary of input ----"
-                      title        des_salary       cur_salary    
- Salesforce Administrator: 101   Min.   :   120   Min.   : 30000  
- Business Analyst        :  56   1st Qu.: 95000   1st Qu.: 80000  
- Salesforce Consultant   :  46   Median :115000   Median :105000  
- Senior Consultant       :  45   Mean   :123280   Mean   :113368  
- Salesforce Developer    :  41   3rd Qu.:150000   3rd Qu.:136000  
- Sales Operations Manager:  37   Max.   :300000   Max.   :500000  
- (Other)                 :3113   NA's   :2852                     
-   cur_bonus       gender         exp_level               city     
-        :3298         :2097            :2093                : 796  
- 10%    :  23   DNI   :  62   Director : 189   New York     : 412  
- 20%    :  18   Female: 357   Executive:  41   San Francisco: 296  
- 0      :   8   Male  : 923   Manager  : 365   San Antonio  :  87  
- 15%    :   8                 Staff    : 751   Boston       :  74  
- 30%    :   6                                  Chicago      :  74  
- (Other):  78                                  (Other)      :1700  
-     state         appexchange  
-        :803             :3402  
- CA     :654   Marketo   :   6  
- NY     :461   Pardot    :   4  
- TX     :214   SteelBrick:   4  
- MA     :200   Apttus    :   3  
- IL     :121   Veeva     :   3  
- (Other):986   (Other)   :  17  
-                                         certs     
-                                            :3372  
- Admin                                      :  19  
- Admin; Advanced Admin                      :   3  
- Admin; Advanced Admin; Platform App Builder:   3  
- Platform Developer I                       :   3  
- Admin; Platform App Builder                :   2  
- (Other)                                    :  37  
-                   cust_type         work_elig                    skills    
- Customer               :1948             :2526                      :2021  
-                        : 650   US Citizen: 339   Apex; Visualforce  : 157  
- Consulting Partner     : 644   No        : 276   Configuration      :  48  
- ISV                    : 134   H1B Visa  : 245   Apex               :  37  
- Consulting Partner; ISV:  30   Green Card:  23   Enterprise Projects:  37  
- Customer; ISV          :  19   OPT       :  10   Project Management :  35  
- (Other)                :  14   (Other)   :  20   (Other)            :1104  
-                                       sfdc_prod       contract      
-                                            :3387   Min.   :0.00000  
- Sales Cloud; Service Cloud                 :  15   1st Qu.:0.00000  
- Sales Cloud                                :  11   Median :0.00000  
- CPQ Cloud                                  :   9   Mean   :0.04798  
- Marketing Cloud; Sales Cloud; Service Cloud:   5   3rd Qu.:0.00000  
- CPQ Cloud; Sales Cloud                     :   2   Max.   :1.00000  
- (Other)                                    :  10                    
-        can_status  
- Perm Passive:3088  
- Perm Active : 163  
- Prospect    : 101  
- Placed      :  42  
- Consult Warm:  23  
- DNU         :  12  
- (Other)     :  10  
-                                                                  background  
- Administrator; Business Analyst                                       : 394  
- Administrator                                                         : 226  
- Developer                                                             : 219  
- Administrator; Developer                                              : 116  
- Marketing Automation; Marketing Manager/Director; Marketing Operations:  98  
- Administrator; Developer; Business Analyst                            :  95  
- (Other)                                                               :2291  
-         acct_city                    industry                   funct     
-              : 790                       :3072                     :1888  
- New York     : 421   Non-Profit          : 122   Administrator     : 301  
- San Francisco: 304   FinancialServices; ;:  40   Developer         : 244  
- San Antonio  :  87   Internet; ;         :  37   Business Analyst  : 225  
- Boston       :  71   Healthcare; ;       :  32   Sales Operations  : 153  
- Chicago      :  71   Non-profit; ;       :  22   Solution Architect: 149  
- (Other)      :1695   (Other)             : 114   (Other)           : 479  
-[1] "---- Printing Model ----"
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 1
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 0
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 1
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 1
+[1] 1
+[1] 0
+[1] 1
+[1] 1
+[1] 1
+[1] 1
+[1] 0
+[1] 1
+[1] 0
+[1] 0
+[1] 0
 
 Call:
-lm(formula = input$cur_salary ~ input$funct, data = input)
-
-Residuals:
-   Min     1Q Median     3Q    Max 
--95619 -29947  -6622  20114 388309 
+lm(formula = salary ~ gender + bckgrd_admin, data = raw)
 
 Coefficients:
-                               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                      111691       1025 109.005  < 2e-16 ***
-input$functAdministrator         -24745       2763  -8.955  < 2e-16 ***
-input$functBusiness Analyst      -15069       3140  -4.799 1.66e-06 ***
-input$functDeveloper              -9009       3029  -2.974 0.002956 ** 
-input$functMarketing              10637       5535   1.922 0.054713 .  
-input$functProduct Owner          15266       4484   3.404 0.000671 ***
-input$functProject Manager        14187       5276   2.689 0.007202 ** 
-input$functSales & BD             18204       6507   2.798 0.005178 ** 
-input$functSales Operations       14112       3742   3.771 0.000165 ***
-input$functSenior Appointment     63927       4330  14.764  < 2e-16 ***
-input$functSolution Architect     18194       3789   4.802 1.63e-06 ***
-input$functTechnical Architect    34457       5276   6.531 7.50e-11 ***
+ (Intercept)     genderDNI  genderFemale    genderMale  bckgrd_admin  
+      111081        -11230         -5011         10116            NA  
+
+
+Call:
+lm(formula = salary ~ gender + bckgrd_admin, data = raw)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-121197  -31081   -9081   23919  388919 
+
+Coefficients: (1 not defined because of singularities)
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    111081       1047 106.080  < 2e-16 ***
+genderDNI      -11230       6141  -1.829   0.0675 .  
+genderFemale    -5011       2711  -1.848   0.0646 .  
+genderMale      10116       1880   5.380 7.93e-08 ***
+bckgrd_admin       NA         NA      NA       NA    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 44520 on 3427 degrees of freedom
-Multiple R-squared:  0.1208,	Adjusted R-squared:  0.118 
-F-statistic: 42.81 on 11 and 3427 DF,  p-value: < 2.2e-16
+Residual standard error: 48030 on 3478 degrees of freedom
+Multiple R-squared:  0.0123,	Adjusted R-squared:  0.01144 
+F-statistic: 14.43 on 3 and 3478 DF,  p-value: 2.416e-09
 
-[1] "---- Printing Cali input ----"
-                      title       des_salary       cur_salary       cur_bonus  
- Salesforce Administrator: 21   Min.   : 35000   Min.   : 30000          :626  
- Sales Operations Manager: 12   1st Qu.:100000   1st Qu.: 95000   10%    :  3  
- Senior Consultant       : 12   Median :120000   Median :120000   20%    :  3  
- Solutions Architect     :  9   Mean   :129135   Mean   :127241   0      :  2  
- Consultant              :  8   3rd Qu.:150000   3rd Qu.:150000   25%    :  2  
- Account Executive       :  6   Max.   :300000   Max.   :410000   30%    :  2  
- (Other)                 :586   NA's   :521                       (Other): 16  
-    gender        exp_level              city                state    
-       :292            :294   San Francisco:296   CA            :654  
- DNI   :  7   Director : 52   San Mateo    : 37                 :  0  
- Female: 96   Executive:  4   Mountain View: 29   AK            :  0  
- Male  :259   Manager  :103   Sunnyvale    : 27   AL            :  0  
-              Staff    :201   Palo Alto    : 20   Andhra Pradesh:  0  
-                              Redwood City : 16   AR            :  0  
-                              (Other)      :229   (Other)       :  0  
-                                                               appexchange 
-                                                                     :646  
- Apttus                                                              :  1  
- Apttus; Chatter; Communities; Sales Cloud; Service Could; ServiceMax:  1  
- Apttus; Eloqua                                                      :  1  
- Apttus; FinancialForce                                              :  1  
- Apttus; HubSpot; Marketing Cloud; Marketo                           :  1  
- (Other)                                                             :  3  
-                                                 certs    
-                                                    :644  
- Admin                                              :  2  
- Advanced Admin                                     :  2  
- Admin; Advanced Admin                              :  1  
- Admin; Platform App Builder                        :  1  
- Admin; Platform Developer I; Sales Cloud Consultant:  1  
- (Other)                                            :  3  
-                        cust_type        work_elig  
- Customer                    :346             :478  
- Consulting Partner          :179   US Citizen: 70  
- ISV                         : 58   No        : 59  
-                             : 49   H1B Visa  : 37  
- Customer; ISV               : 14   Green Card:  6  
- Customer; Consulting Partner:  5   Other     :  2  
- (Other)                     :  3   (Other)   :  2  
-                             skills   
-                                :394  
- Apex; Visualforce              : 28  
- Enterprise Projects            : 17  
- Apex                           : 10  
- Apex; Architecture; Visualforce:  9  
- Apex; Java; Visualforce        :  9  
- (Other)                        :187  
-                                       sfdc_prod      contract      
-                                            :644   Min.   :0.00000  
- CPQ Cloud                                  :  3   1st Qu.:0.00000  
- Sales Cloud                                :  3   Median :0.00000  
- Marketing Cloud; Sales Cloud; Service Cloud:  2   Mean   :0.04893  
- CPQ Cloud; Sales Cloud                     :  1   3rd Qu.:0.00000  
- Marketing Cloud                            :  1   Max.   :1.00000  
- (Other)                                    :  0                    
-        can_status 
- Perm Passive:598  
- Prospect    : 25  
- Perm Active : 19  
- Placed      :  6  
- Consult Warm:  5  
- DNU         :  1  
- (Other)     :  0  
-                                                                  background 
- Administrator; Business Analyst                                       : 67  
- Developer                                                             : 44  
- Administrator                                                         : 32  
- Administrator; Business Analyst; Sales Operations                     : 22  
- Administrator; Developer                                              : 19  
- Marketing Automation; Marketing Manager/Director; Marketing Operations: 16  
- (Other)                                                               :454  
-         acct_city                    industry                  funct    
- San Francisco:291                        :511                     :257  
- San Mateo    : 38   Non-Profit           :112   Administrator     : 70  
- Mountain View: 30   FinancialServices; ; :  6   Business Analyst  : 60  
- Sunnyvale    : 25   Telecommunications; ;:  5   Developer         : 56  
- Palo Alto    : 20   Manufacturing; ;     :  4   Solution Architect: 49  
- Redwood City : 16   Energy               :  3   Sales Operations  : 36  
- (Other)      :234   (Other)              : 13   (Other)           :126  
-[1] "---- Printing Cali Model ----"
-
-Call:
-lm(formula = ca_data$cur_salary ~ ca_data$funct, data = ca_data)
-
-Residuals:
-   Min     1Q Median     3Q    Max 
--92212 -30139  -4103  21445 279179 
-
-Coefficients:
-                                 Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                      130821.0     2832.3  46.188  < 2e-16 ***
-ca_data$functAdministrator       -35056.7     6121.7  -5.727 1.57e-08 ***
-ca_data$functBusiness Analyst    -22754.3     6510.3  -3.495 0.000506 ***
-ca_data$functDeveloper           -15303.2     6696.1  -2.285 0.022616 *  
-ca_data$functMarketing            -3762.2    11371.0  -0.331 0.740859    
-ca_data$functProduct Owner          964.7     9036.3   0.107 0.915014    
-ca_data$functProject Manager      -5354.3    12061.1  -0.444 0.657238    
-ca_data$functSales & BD            6456.8    11070.7   0.583 0.559945    
-ca_data$functSales Operations      -682.1     8080.3  -0.084 0.932751    
-ca_data$functSenior Appointment   54391.1     8396.3   6.478 1.85e-10 ***
-ca_data$functSolution Architect    3852.5     7078.0   0.544 0.586433    
-ca_data$functTechnical Architect  25112.3    12061.1   2.082 0.037729 *  
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 45410 on 642 degrees of freedom
-Multiple R-squared:  0.1486,	Adjusted R-squared:  0.1341 
-F-statistic: 10.19 on 11 and 642 DF,  p-value: < 2.2e-16
-
-[1] "---- Printing mass summary input ----"
-                                                                                                title  
-                                                                                                   :0  
- --                                                                                                :0  
- <92><a2><8f><93><b4><e8>_ 5 x Salesforce Certified <92><a2><8f><93><b4><e8>_ Salesforce Consultant:0  
- Accenture Cloud First                                                                             :0  
- Account-Based Marketing | Strategist | Technologist                                               :0  
- Account Director                                                                                  :0  
- (Other)                                                                                           :0  
-   des_salary    cur_salary    cur_bonus    gender      exp_level      city  
- Min.   : NA   Min.   : NA          :0         :0            :0          :0  
- 1st Qu.: NA   1st Qu.: NA   0      :0   DNI   :0   Director :0   Acton  :0  
- Median : NA   Median : NA   10%    :0   Female:0   Executive:0   Addison:0  
- Mean   :NaN   Mean   :NaN   $10,000:0   Male  :0   Manager  :0   Akron  :0  
- 3rd Qu.: NA   3rd Qu.: NA   100000 :0              Staff    :0   Alameda:0  
- Max.   : NA   Max.   : NA   100,000:0                            Albany :0  
-                             (Other):0                            (Other):0  
-            state  
-               :0  
- AK            :0  
- AL            :0  
- Andhra Pradesh:0  
- AR            :0  
- Attiki        :0  
- (Other)       :0  
-                                                               appexchange
-                                                                     :0   
- Amazon Web Services; Communities; Sales Cloud; Service Could        :0   
- Apttus                                                              :0   
- Apttus; Chatter; Communities; Sales Cloud; Service Could; ServiceMax:0   
- Apttus; Eloqua                                                      :0   
- Apttus; FinancialForce                                              :0   
- (Other)                                                             :0   
-                                                                                                                       certs  
-                                                                                                                          :0  
- Admin                                                                                                                    :0  
- Admin; Advanced Admin                                                                                                    :0  
- Admin; Advanced Admin; Platform App Builder                                                                              :0  
- Admin; Advanced Admin; Platform App Builder; Community Cloud Consultant; Sales Cloud Consultant; Service Cloud Consultant:0  
- Admin; Advanced Admin; Platform App Builder; Platform Developer I; Platform Developer II; DEV501                         :0  
- (Other)                                                                                                                  :0  
-                             cust_type      work_elig
-                                  :0             :0  
- Consulting Partner               :0   Green Card:0  
- Consulting Partner; ISV          :0   H1B Visa  :0  
- Customer                         :0   No        :0  
- Customer; Consulting Partner     :0   OPT       :0  
- Customer; Consulting Partner; ISV:0   Other     :0  
- (Other)                          :0   (Other)   :0  
-                                                                                                                                          skills 
-                                                                                                                                             :0  
- Agile                                                                                                                                       :0  
- Agile; Analytics; Configuration; ERP                                                                                                        :0  
- Agile; Angular; Apex; CSS; Java; Scrum; Visualforce                                                                                         :0  
- Agile; Apex; Architecture; C#; Configuration; CSS; HTML; Integrations; Java; Product Development; Project Management; Visualforce; Waterfall:0  
- Agile; Apex; Architecture; Configuration; Enterprise Projects; Integrations; Visualforce                                                    :0  
- (Other)                                                                                                                                     :0  
-                                                                                                            sfdc_prod
-                                                                                                                 :0  
- CPQ Cloud                                                                                                       :0  
- CPQ Cloud; Customer Communities; Data.com; Employee Communities; Partner Communities; Sales Cloud; Service Cloud:0  
- CPQ Cloud; Customer Communities; Data.com; Sales Cloud; Service Cloud                                           :0  
- CPQ Cloud; Sales Cloud                                                                                          :0  
- CPQ Cloud; Sales Cloud; Service Cloud                                                                           :0  
- (Other)                                                                                                         :0  
-    contract          can_status
- Min.   : NA   Assigned    :0   
- 1st Qu.: NA   Consult Hot :0   
- Median : NA   Consult Warm:0   
- Mean   :NaN   DNU         :0   
- 3rd Qu.: NA   Perm Active :0   
- Max.   : NA   Perm Passive:0   
-               (Other)     :0   
-                                                                          background
-                                                                               :0   
- Administrator                                                                 :0   
- Administrator; Business Analyst                                               :0   
- Administrator; Business Analyst; Business Development                         :0   
- Administrator; Business Analyst; Business Development; CRO; Senior Appointment:0   
- Administrator; Business Analyst; Business Development; Marketing Operations   :0   
- (Other)                                                                       :0   
-   acct_city               industry              funct  
-        :0                     :0                   :0  
- Acton  :0   eCommerce; ;      :0   Administrator   :0  
- Addison:0   Education; ;      :0   Business Analyst:0  
- Akron  :0   Energy            :0   Client/NA       :0  
- Alameda:0   Energy; ;         :0   Developer       :0  
- Albany :0   Financial Services:0   Marketing       :0  
- (Other):0   (Other)           :0   (Other)         :0  
-[1] "---- Printing NY input ----"
-                                                                                                title  
-                                                                                                   :0  
- --                                                                                                :0  
- <92><a2><8f><93><b4><e8>_ 5 x Salesforce Certified <92><a2><8f><93><b4><e8>_ Salesforce Consultant:0  
- Accenture Cloud First                                                                             :0  
- Account-Based Marketing | Strategist | Technologist                                               :0  
- Account Director                                                                                  :0  
- (Other)                                                                                           :0  
-   des_salary    cur_salary    cur_bonus    gender      exp_level      city  
- Min.   : NA   Min.   : NA          :0         :0            :0          :0  
- 1st Qu.: NA   1st Qu.: NA   0      :0   DNI   :0   Director :0   Acton  :0  
- Median : NA   Median : NA   10%    :0   Female:0   Executive:0   Addison:0  
- Mean   :NaN   Mean   :NaN   $10,000:0   Male  :0   Manager  :0   Akron  :0  
- 3rd Qu.: NA   3rd Qu.: NA   100000 :0              Staff    :0   Alameda:0  
- Max.   : NA   Max.   : NA   100,000:0                            Albany :0  
-                             (Other):0                            (Other):0  
-            state  
-               :0  
- AK            :0  
- AL            :0  
- Andhra Pradesh:0  
- AR            :0  
- Attiki        :0  
- (Other)       :0  
-                                                               appexchange
-                                                                     :0   
- Amazon Web Services; Communities; Sales Cloud; Service Could        :0   
- Apttus                                                              :0   
- Apttus; Chatter; Communities; Sales Cloud; Service Could; ServiceMax:0   
- Apttus; Eloqua                                                      :0   
- Apttus; FinancialForce                                              :0   
- (Other)                                                             :0   
-                                                                                                                       certs  
-                                                                                                                          :0  
- Admin                                                                                                                    :0  
- Admin; Advanced Admin                                                                                                    :0  
- Admin; Advanced Admin; Platform App Builder                                                                              :0  
- Admin; Advanced Admin; Platform App Builder; Community Cloud Consultant; Sales Cloud Consultant; Service Cloud Consultant:0  
- Admin; Advanced Admin; Platform App Builder; Platform Developer I; Platform Developer II; DEV501                         :0  
- (Other)                                                                                                                  :0  
-                             cust_type      work_elig
-                                  :0             :0  
- Consulting Partner               :0   Green Card:0  
- Consulting Partner; ISV          :0   H1B Visa  :0  
- Customer                         :0   No        :0  
- Customer; Consulting Partner     :0   OPT       :0  
- Customer; Consulting Partner; ISV:0   Other     :0  
- (Other)                          :0   (Other)   :0  
-                                                                                                                                          skills 
-                                                                                                                                             :0  
- Agile                                                                                                                                       :0  
- Agile; Analytics; Configuration; ERP                                                                                                        :0  
- Agile; Angular; Apex; CSS; Java; Scrum; Visualforce                                                                                         :0  
- Agile; Apex; Architecture; C#; Configuration; CSS; HTML; Integrations; Java; Product Development; Project Management; Visualforce; Waterfall:0  
- Agile; Apex; Architecture; Configuration; Enterprise Projects; Integrations; Visualforce                                                    :0  
- (Other)                                                                                                                                     :0  
-                                                                                                            sfdc_prod
-                                                                                                                 :0  
- CPQ Cloud                                                                                                       :0  
- CPQ Cloud; Customer Communities; Data.com; Employee Communities; Partner Communities; Sales Cloud; Service Cloud:0  
- CPQ Cloud; Customer Communities; Data.com; Sales Cloud; Service Cloud                                           :0  
- CPQ Cloud; Sales Cloud                                                                                          :0  
- CPQ Cloud; Sales Cloud; Service Cloud                                                                           :0  
- (Other)                                                                                                         :0  
-    contract          can_status
- Min.   : NA   Assigned    :0   
- 1st Qu.: NA   Consult Hot :0   
- Median : NA   Consult Warm:0   
- Mean   :NaN   DNU         :0   
- 3rd Qu.: NA   Perm Active :0   
- Max.   : NA   Perm Passive:0   
-               (Other)     :0   
-                                                                          background
-                                                                               :0   
- Administrator                                                                 :0   
- Administrator; Business Analyst                                               :0   
- Administrator; Business Analyst; Business Development                         :0   
- Administrator; Business Analyst; Business Development; CRO; Senior Appointment:0   
- Administrator; Business Analyst; Business Development; Marketing Operations   :0   
- (Other)                                                                       :0   
-   acct_city               industry              funct  
-        :0                     :0                   :0  
- Acton  :0   eCommerce; ;      :0   Administrator   :0  
- Addison:0   Education; ;      :0   Business Analyst:0  
- Akron  :0   Energy            :0   Client/NA       :0  
- Alameda:0   Energy; ;         :0   Developer       :0  
- Albany :0   Financial Services:0   Marketing       :0  
- (Other):0   (Other)           :0   (Other)         :0  
