@@ -134,3 +134,33 @@ Residual standard error: 48030 on 3478 degrees of freedom
 Multiple R-squared:  0.0123,	Adjusted R-squared:  0.01144 
 F-statistic: 14.43 on 3 and 3478 DF,  p-value: 2.416e-09
 
+
+Call:
+lm(formula = salary ~ gender + bckgrd_admin, data = raw)
+
+Coefficients:
+ (Intercept)     genderDNI  genderFemale    genderMale  bckgrd_admin  
+      111081        -11230         -5011         10116            NA  
+
+
+Call:
+lm(formula = salary ~ gender + bckgrd_admin, data = raw)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-121197  -31081   -9081   23919  388919 
+
+Coefficients: (1 not defined because of singularities)
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    111081       1047 106.080  < 2e-16 ***
+genderDNI      -11230       6141  -1.829   0.0675 .  
+genderFemale    -5011       2711  -1.848   0.0646 .  
+genderMale      10116       1880   5.380 7.93e-08 ***
+bckgrd_admin       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 48030 on 3478 degrees of freedom
+Multiple R-squared:  0.0123,	Adjusted R-squared:  0.01144 
+F-statistic: 14.43 on 3 and 3478 DF,  p-value: 2.416e-09
+
