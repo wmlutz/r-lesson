@@ -1,166 +1,192 @@
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 1
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 0
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 0
-[1] 0
-[1] 0
-[1] 1
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 1
-[1] 1
-[1] 0
-[1] 1
-[1] 1
-[1] 1
-[1] 1
-[1] 0
-[1] 1
-[1] 0
-[1] 0
-[1] 0
 
 Call:
-lm(formula = salary ~ gender + bckgrd_admin, data = raw)
-
-Coefficients:
- (Intercept)     genderDNI  genderFemale    genderMale  bckgrd_admin  
-      111081        -11230         -5011         10116            NA  
-
-
-Call:
-lm(formula = salary ~ gender + bckgrd_admin, data = raw)
+lm(formula = salary ~ gender + exper + state + fn, data = just_states)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--121197  -31081   -9081   23919  388919 
+-139841  -27368   -3383   20727  377586 
 
-Coefficients: (1 not defined because of singularities)
-             Estimate Std. Error t value Pr(>|t|)    
-(Intercept)    111081       1047 106.080  < 2e-16 ***
-genderDNI      -11230       6141  -1.829   0.0675 .  
-genderFemale    -5011       2711  -1.848   0.0646 .  
-genderMale      10116       1880   5.380 7.93e-08 ***
-bckgrd_admin       NA         NA      NA       NA    
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          191500      30149   6.352 2.52e-10 ***
+genderDNI             -4062       7129  -0.570 0.568863    
+genderFemale          -9072       7598  -1.194 0.232618    
+genderMale            -3389       7335  -0.462 0.644080    
+experDirector         34072       8694   3.919 9.12e-05 ***
+experExecutive        82459      10913   7.556 5.79e-14 ***
+experManager           9861       8042   1.226 0.220275    
+experStaff            -1802       7892  -0.228 0.819394    
+stateAR              -90118      39012  -2.310 0.020967 *  
+stateAZ             -107868      34834  -3.097 0.001979 ** 
+stateCA              -64607      30215  -2.138 0.032594 *  
+stateCO              -94803      30507  -3.108 0.001907 ** 
+stateCT              -83071      31271  -2.656 0.007946 ** 
+stateDC              -87620      31567  -2.776 0.005549 ** 
+stateDE              -62478      35743  -1.748 0.080589 .  
+stateFL              -83318      30658  -2.718 0.006619 ** 
+stateGA              -68764      30461  -2.257 0.024066 *  
+stateIA             -123599      52345  -2.361 0.018291 *  
+stateID              -82500      42637  -1.935 0.053111 .  
+stateIL              -83524      30398  -2.748 0.006045 ** 
+stateIN              -91278      33331  -2.739 0.006215 ** 
+stateKS              -92325      35707  -2.586 0.009775 ** 
+stateKY              -97833      38922  -2.514 0.012014 *  
+stateLA              -79101      36949  -2.141 0.032385 *  
+stateMA              -74947      30320  -2.472 0.013507 *  
+stateMD              -87147      31087  -2.803 0.005097 ** 
+stateME              -96213      52411  -1.836 0.066514 .  
+stateMI              -84775      31787  -2.667 0.007702 ** 
+stateMN              -91864      30980  -2.965 0.003052 ** 
+stateMO             -104750      33708  -3.108 0.001907 ** 
+stateNC              -95274      31030  -3.070 0.002161 ** 
+stateND             -110838      39049  -2.838 0.004570 ** 
+stateNE              -85180      37125  -2.294 0.021849 *  
+stateNH             -104192      32001  -3.256 0.001146 ** 
+stateNJ              -78405      30537  -2.567 0.010301 *  
+stateNV             -114159      39153  -2.916 0.003580 ** 
+stateNY              -77226      30232  -2.554 0.010695 *  
+stateOH             -100131      31441  -3.185 0.001467 ** 
+stateOR              -79333      32101  -2.471 0.013525 *  
+statePA              -69086      30776  -2.245 0.024868 *  
+stateRI              -78576      35762  -2.197 0.028096 *  
+stateSC             -102072      32778  -3.114 0.001866 ** 
+stateTN              -69951      32005  -2.186 0.028933 *  
+stateTX              -83131      30296  -2.744 0.006114 ** 
+stateUT             -100009      30699  -3.258 0.001138 ** 
+stateVA              -74920      30526  -2.454 0.014183 *  
+stateVT              -80500      52220  -1.542 0.123305    
+stateWA              -76527      30669  -2.495 0.012650 *  
+stateWI             -112147      33354  -3.362 0.000785 ***
+fnAdministrator      -24656       4560  -5.408 6.99e-08 ***
+fnbusiness_analyst   -13206       4941  -2.673 0.007573 ** 
+fnclient_na           13665      10218   1.337 0.181231    
+fnDeveloper           -5710       4767  -1.198 0.231077    
+fnMarketing           -7252       6980  -1.039 0.298872    
+fnProduct Owner        3109       6198   0.502 0.615956    
+fnProject Manager      7752       6880   1.127 0.259904    
+fnsales_and_bd         1784       7884   0.226 0.821016    
+fnsales_ops           -4986       5777  -0.863 0.388244    
+fnsolution_arch       11904       5344   2.228 0.025983 *  
+fnsr_appointment      31570       6096   5.179 2.41e-07 ***
+fntech_arch           20219       6539   3.092 0.002009 ** 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 48030 on 3478 degrees of freedom
-Multiple R-squared:  0.0123,	Adjusted R-squared:  0.01144 
-F-statistic: 14.43 on 3 and 3478 DF,  p-value: 2.416e-09
+Residual standard error: 42640 on 2513 degrees of freedom
+Multiple R-squared:  0.2205,	Adjusted R-squared:  0.2019 
+F-statistic: 11.85 on 60 and 2513 DF,  p-value: < 2.2e-16
 
-
-Call:
-lm(formula = salary ~ gender + bckgrd_admin, data = raw)
-
-Coefficients:
- (Intercept)     genderDNI  genderFemale    genderMale  bckgrd_admin  
-      111081        -11230         -5011         10116            NA  
-
+[1] "New York City Area data only"
 
 Call:
-lm(formula = salary ~ gender + bckgrd_admin, data = raw)
+lm(formula = salary ~ gender + exper + fn, data = just_ny)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--121197  -31081   -9081   23919  388919 
+-139094  -28139   -2231   23344  196027 
 
-Coefficients: (1 not defined because of singularities)
-             Estimate Std. Error t value Pr(>|t|)    
-(Intercept)    111081       1047 106.080  < 2e-16 ***
-genderDNI      -11230       6141  -1.829   0.0675 .  
-genderFemale    -5011       2711  -1.848   0.0646 .  
-genderMale      10116       1880   5.380 7.93e-08 ***
-bckgrd_admin       NA         NA      NA       NA    
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          116170       2569  45.227  < 2e-16 ***
+genderDNI              6424      18998   0.338 0.735391    
+genderFemale          12101      20174   0.600 0.548865    
+genderMale            16044      19905   0.806 0.420555    
+experDirector         15804      21455   0.737 0.461673    
+experExecutive        77046      23040   3.344 0.000881 ***
+experManager         -12664      21164  -0.598 0.549827    
+experStaff           -25022      21019  -1.190 0.234371    
+fnAdministrator      -22985      10503  -2.188 0.029050 *  
+fnbusiness_analyst   -12930      11382  -1.136 0.256429    
+fnclient_na           12323      16819   0.733 0.464044    
+fnDeveloper           -3042      10214  -0.298 0.765941    
+fnMarketing          -21326      11226  -1.900 0.057976 .  
+fnProduct Owner        2668      12315   0.217 0.828550    
+fnProject Manager     17584      14846   1.184 0.236748    
+fnsales_and_bd        10460      21382   0.489 0.624902    
+fnsales_ops           -8794      10604  -0.829 0.407294    
+fnsolution_arch        6064      11522   0.526 0.598914    
+fnsr_appointment      19712      11120   1.773 0.076844 .  
+fntech_arch           15039      12595   1.194 0.232975    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 48030 on 3478 degrees of freedom
-Multiple R-squared:  0.0123,	Adjusted R-squared:  0.01144 
-F-statistic: 14.43 on 3 and 3478 DF,  p-value: 2.416e-09
+Residual standard error: 40380 on 559 degrees of freedom
+Multiple R-squared:  0.2843,	Adjusted R-squared:   0.26 
+F-statistic: 11.69 on 19 and 559 DF,  p-value: < 2.2e-16
+
+[1] "California data only"
+
+Call:
+lm(formula = salary ~ gender + exper + fn, data = just_ca)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-126415  -26741   -4219   20813  279781 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          130219       2789  46.695  < 2e-16 ***
+genderDNI             19689      23352   0.843  0.39946    
+genderFemale           4678      27906   0.168  0.86693    
+genderMale            12842      27735   0.463  0.64349    
+experDirector         31420      29217   1.075  0.28259    
+experExecutive        44877      36576   1.227  0.22029    
+experManager          -9651      28735  -0.336  0.73708    
+experStaff           -17845      28199  -0.633  0.52709    
+fnAdministrator      -27468       9807  -2.801  0.00525 ** 
+fnbusiness_analyst   -18216       9667  -1.884  0.05997 .  
+fnclient_na           28018      21595   1.297  0.19495    
+fnDeveloper          -10393       9585  -1.084  0.27865    
+fnMarketing          -10363      13487  -0.768  0.44254    
+fnProduct Owner       -1997      12151  -0.164  0.86950    
+fnProject Manager     -6872      14236  -0.483  0.62945    
+fnsales_and_bd       -11697      12768  -0.916  0.35998    
+fnsales_ops           -8305      11524  -0.721  0.47136    
+fnsolution_arch        2169       9786   0.222  0.82465    
+fnsr_appointment      20154      12198   1.652  0.09896 .  
+fntech_arch           15820      13647   1.159  0.24682    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 44790 on 643 degrees of freedom
+Multiple R-squared:  0.1998,	Adjusted R-squared:  0.1761 
+F-statistic:  8.45 on 19 and 643 DF,  p-value: < 2.2e-16
+
+[1] "Massachusetts Area data only"
+
+Call:
+lm(formula = salary ~ gender + exper + fn, data = just_ma)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-76213 -26556  -2694  20934 190934 
+
+Coefficients: (1 not defined because of singularities)
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          109066       4226  25.811  < 2e-16 ***
+genderDNI            -12578      29693  -0.424  0.67229    
+genderFemale         -17514      20088  -0.872  0.38430    
+genderMale           -20896      19553  -1.069  0.28645    
+experDirector         12079      19166   0.630  0.52923    
+experExecutive        55492      27524   2.016  0.04508 *  
+experManager          15057      10859   1.387  0.16706    
+experStaff               NA         NA      NA       NA    
+fnAdministrator       -9395      20230  -0.464  0.64286    
+fnbusiness_analyst    17317      21270   0.814  0.41651    
+fnclient_na           23886      40094   0.596  0.55200    
+fnDeveloper            7147      20122   0.355  0.72281    
+fnMarketing           60780      21717   2.799  0.00562 ** 
+fnProduct Owner       26308      24534   1.072  0.28483    
+fnProject Manager     50678      25842   1.961  0.05122 .  
+fnsales_and_bd        51830      45001   1.152  0.25075    
+fnsales_ops            4525      23204   0.195  0.84559    
+fnsolution_arch       38714      25121   1.541  0.12483    
+fnsr_appointment      47146      28385   1.661  0.09824 .  
+fntech_arch           49478      30644   1.615  0.10792    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 40310 on 206 degrees of freedom
+Multiple R-squared:  0.2101,	Adjusted R-squared:  0.1411 
+F-statistic: 3.044 on 18 and 206 DF,  p-value: 6.506e-05
 
